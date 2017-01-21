@@ -67,10 +67,6 @@ public class LinkedList {
 			tail.next = newNode;
 			tail = newNode;
 			size++;
-			if (isEmpty()) {
-				insertHead(val);
-				return;
-			}
 		}
 	}
 
