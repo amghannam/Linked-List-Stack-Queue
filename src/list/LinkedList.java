@@ -108,9 +108,15 @@ public class LinkedList {
 	 */
 	public void insertHead(int val) {
 		Node newHead = new Node(val);
-		newHead.next = head;
-		head = newHead;
-		size++;
+		if (isEmpty()) {
+			head = newHead;
+			tail = newHead;
+			size++;
+		} else {
+			newHead.next = head;
+			head = newHead;
+			size++;
+		}
 	}
 
 	/**
