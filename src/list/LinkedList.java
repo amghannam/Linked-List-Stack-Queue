@@ -255,6 +255,24 @@ public class LinkedList {
 		}
 		return NOT_FOUND;
 	}
+	
+	/**
+	 * Returns the value of the middle element in this list, or -1 if 
+	 * the list is empty.
+	 * 
+	 * @return the value of the middle element
+	 */
+	public int getMiddle() {
+		if (!isEmpty()) {
+			Node slow = head;
+			Node fast = head;
+			while (fast.next != null && fast.next.next != null) {
+				slow = slow.next;
+				fast = fast.next.next;
+			}
+		}
+		return NOT_FOUND;
+	}
 
 	/**
 	 * Returns the value of the last element in the list if it is not empty,
