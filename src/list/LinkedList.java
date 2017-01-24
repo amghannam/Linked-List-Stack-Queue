@@ -12,10 +12,11 @@ package list;
  *
  */
 public class LinkedList {
+	private static final int NOT_FOUND = -1;
+	
 	private Node head;
 	private Node tail;
 	private int size = 0;
-	private static final int NOT_FOUND = -1;
 
 	/**
 	 * Constructs an empty singly-linked list, without any nodes.
