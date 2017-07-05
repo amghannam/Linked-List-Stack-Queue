@@ -4,28 +4,26 @@
 package list;
 
 /**
- * Represents a singly-linked list node. 
+ * Represents a linked list node. 
  * 
  * @author Ahmed Ghannam
- *
  */
-public class Node {
+public class Node<T> {
 	/**
-	 * The numeric value associated with this node.
+	 * The node to which this node is pointing. 
 	 */
-	public int value; 
+	public Node<T> next; 
 	
 	/**
-	 * The node to which this node is pointing.  
+	 * The value or data associated with this node. 
 	 */
-	public Node next; 
+	public T value; 
 	
 	/**
-	 * Constructs a new node with the specified numeric value.
-	 *  
-	 * @param value the value of the node to be created.
+	 * Constructs a new linked list node with the specified value. 
+	 * @param value the value to be associated with this node 
 	 */
-	public Node(int value) {
+	public Node(T value) {
 		this.value = value; 
 	}
 }
